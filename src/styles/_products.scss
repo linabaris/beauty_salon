@@ -1,0 +1,72 @@
+@import './btn_sm';
+.products {
+    &__offer {
+        background-color: $color-light-grey;
+        padding-bottom: 132px;
+    }
+    &__title {
+        @include font('Roboto', normal, 700, 24px);
+        line-height: 28px;
+        padding: 80px 0 38px;
+    }
+    &__cards {
+        padding: 0 5px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    width: 255px;
+    height: 363px;
+    padding: 20px 30px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3px 0;
+    &__img {
+        width: 125px;
+        height: 166px;
+    }
+    &__img img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    &__text {
+        display: block;
+        text-align: center;
+        @include font('Roboto', normal, 400, 14px);
+        line-height: 20px;
+        color: $color-dark-grey;
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        align-items: center;
+    }
+    &-price__val {
+        @include font('Roboto', normal, 500, 21px);
+        line-height: 25px;
+        letter-spacing: 0.05em;
+        color: #000;
+    }
+}
+
+@media(max-width:$sm) {
+    .products {
+        &__title {
+            text-align: center;
+        }
+        &__cards {
+            justify-content: space-around;
+        }
+        &__offer {
+            padding-bottom: 3vh;
+        }
+    }
+}

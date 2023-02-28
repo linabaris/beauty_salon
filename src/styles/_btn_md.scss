@@ -1,0 +1,23 @@
+.btn-md {
+    width: 170px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+.btn-md:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+.btn-md:active {
+    transform: scale(0.95);
+}
+
+@media(max-width:$sm) {
+    .btn-md {
+        width: 150px;
+        height: 35px;
+    }
+}

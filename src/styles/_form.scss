@@ -1,0 +1,58 @@
+.forms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.form {
+    display: flex;
+    width: 540px;
+    height: 212px;    
+    background-color: $color-green;
+    padding: 35px 40px;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        @include font('Roboto', normal, 700, 18px);
+        line-height: 21px;
+        color: #fff;
+    }
+    &__text {
+        @include font('Roboto', normal, 400, 14px);
+        line-height: 20px;
+        color: #fff;
+    }
+    &__input-field {
+        width: 225px;
+        height: 35px;
+        border-radius: 30px;
+        outline: none;
+        border: none;
+        padding: 9px 0 9px 25px;
+        
+    }
+    &__btn-md {
+        color: #fff;
+        border: 2px solid #FFFFFF;
+    }
+}
+
+@media (max-width: $lg) {
+    .forms {
+        flex-direction: column;
+    }
+    .form {
+        margin-bottom: 10px;
+        width: 100%;
+        justify-content: inherit;
+    }
+}
+@media(max-width:$sm) {
+    .forms {
+        margin-top: 3vh;
+    }
+}

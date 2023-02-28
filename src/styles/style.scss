@@ -1,0 +1,18 @@
+@import './var';
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline-style: none;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+@import './header';
+@import './btn_md';
+@import './banner';
+@import './products';
+@import './form';
+@import './footer';

@@ -1,0 +1,16 @@
+$color-green:#66C05D;
+$color-dark-grey: #333333;
+$color-light-grey: #EFEFEF;
+$color-sm-text: #828282;
+
+//breakpoints
+$lg: 1100px;
+$sm:770px;
+
+@mixin font ($family, $style, $weight, $size) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+}
+
